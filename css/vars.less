@@ -1,0 +1,19 @@
+﻿@brand-color: #1411a1;
+@navbar-color: #373737;
+
+@inverse-red: #A24747;
+
+@font-main: 'Michroma', sans-serif;
+ 
+.transition(@property; @duration; @type) {
+    -webkit-transition: @property @duration @type;
+    -moz-transition: @property @duration @type;
+    -o-transition: @property @duration @type;
+    transition: @property @duration @type;
+} 
+
+.invert(@param) {
+    -webkit-filter: invert(@param);
+    -moz-filter: invert(@param);
+    filter: invert(@param);
+} 

@@ -1,0 +1,150 @@
+﻿body.power-off {
+  color: #515151;
+  background-color: #000;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+body.power-off header .logo img {
+  -webkit-filter: invert(0.24);
+  -moz-filter: invert(0.24);
+  filter: invert(0.24);
+}
+body.power-off header .logo img:nth-child(2),
+body.power-off header .logo img:nth-child(4) {
+  opacity: 0.4;
+}
+body.power-off header .contacts .facebook a {
+  opacity: 0.8;
+}
+body.power-off header .contacts .facebook a:hover {
+  opacity: 1;
+}
+body.power-off header #navbar {
+  border: 1px solid #515151;
+  background: #1e1e1e;
+}
+body.power-off header #navbar a,
+body.power-off header #navbar a:visited {
+  -webkit-transition: color 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in;
+  -o-transition: color 0.1s ease-in;
+  transition: color 0.1s ease-in;
+  color: #A24747;
+  padding: 15px 32px;
+}
+body.power-off header #navbar a:hover,
+body.power-off header #navbar a:visited:hover {
+  -webkit-transition: background-color 0.2s ease-in;
+  -moz-transition: background-color 0.2s ease-in;
+  -o-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+  opacity: 0.8;
+  color: #ca8585;
+  background-color: #02010d;
+}
+header {
+  display: block;
+  clear: right;
+  padding: 20px 0;
+}
+header .logo {
+  height: 72px;
+  float: left;
+}
+header .logo:hover {
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+header .logo:hover img {
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+header .logo:hover img:nth-child(1) {
+  transition-delay: 100ms;
+}
+header .logo:hover img:nth-child(2) {
+  cursor: pointer;
+}
+header .logo:hover img:nth-child(2):hover {
+  opacity: 0.6;
+}
+header .contacts {
+  float: right;
+  font-family: 'Michroma', sans-serif;
+}
+header .contacts span {
+  float: right;
+}
+header .contacts span.telephone {
+  font-size: 28px;
+  line-height: 36px;
+  margin-top: 6px;
+}
+header .contacts span.telephone b {
+  margin: 0 3px;
+}
+header .contacts span.facebook {
+  font-size: 14px;
+  clear: both;
+  -webkit-transition: all linear 0.2s;
+}
+header .contacts span.facebook a:hover {
+  text-decoration: underline;
+}
+header #navbar {
+  margin-top: 16px;
+  background-color: #373737;
+}
+header #navbar a {
+  line-height: 1em;
+  text-decoration: none;
+  color: white;
+  padding: 16px 32px;
+  -webkit-transition: background-color linear 0.2s;
+  border-left: 1px solid #4b4b4b;
+}
+header #navbar a:last-child {
+  border-right: 1px solid #4b4b4b;
+}
+header #navbar a:hover {
+  background-color: #0d0b6a;
+}
+header #navbar a:focus {
+  background-color: transparent;
+}
+header #navbar a:visited {
+  color: white;
+}
+.container {
+  max-width: 970px;
+}
+.qrcode {
+  background-image: url('/images/qrcode.svg');
+  background-size: contain;
+  min-width: 300px;
+}
+@media (max-width: 768px) {
+  header .container {
+    padding: 12px 24px;
+    margin: auto;
+  }
+  header .container .logo {
+    width: 100%;
+  }
+  header .container .logo img {
+    max-height: 72%;
+  }
+  header .container .contacts {
+    float: left;
+  }
+  .qrcode {
+    margin-top: 30px;
+    width: 100%;
+  }
+}

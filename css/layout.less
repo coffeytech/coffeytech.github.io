@@ -1,0 +1,165 @@
+﻿@import "vars.less";
+
+body {
+    &.power-off {
+        @invert-color: lighten(@navbar-color, 10%);
+        color: @invert-color;
+        background-color: #000;
+       
+        .transition(all, 0.2s, ease-in);
+      
+        header {
+
+            .logo img {
+                .invert(0.24);
+                    
+                &:nth-child(2),
+                &:nth-child(4) { opacity: 0.4; }
+            }
+
+            .contacts {
+
+                .facebook a {
+                    opacity: 0.8;
+
+                    &:hover { opacity: 1; }
+                }
+            }
+
+            #navbar {
+                border: 1px solid @invert-color;
+                background: darken(@navbar-color, 10%);
+            
+                a, a:visited {
+                    .transition(color, 0.1s, ease-in);
+                    color: @inverse-red;
+                    padding: 15px 32px; 
+
+                    &:hover { 
+                        .transition(background-color, 0.2s, ease-in);
+                        opacity: 0.8;
+                        color: lighten(@inverse-red, 20%);
+                        background-color: darken(@brand-color, 32%); 
+                    } 
+                }
+            }
+        }
+    }
+}
+
+header {
+    @header-pad: 20px;
+
+    display: block;
+    clear: right;
+    padding: @header-pad 0;
+        
+    .logo {
+        height: 72px;
+        float: left;
+
+        &:hover {
+            .transition(all, 0.1s, linear);
+
+            img {
+                
+                .transition(all, 0.1s, linear);
+           
+                &:nth-child(1) { transition-delay: 100ms; }
+                &:nth-child(2) { 
+                    cursor: pointer; 
+                    &:hover { opacity: 0.6; }
+                }
+                &:nth-child(3) {}
+                &:nth-child(4) {}
+            }
+        }
+    }
+
+    .contacts {
+        float: right;
+        font-family: @font-main;
+        
+        span {
+            float: right;
+
+            &.telephone { 
+                font-size: 28px;
+                line-height: 36px;
+                margin-top: 6px;
+
+                b { margin: 0 3px; }
+            }
+            
+            &.facebook {
+                font-size: 14px;
+                clear: both;
+                -webkit-transition: all linear 0.2s;
+
+                a:hover { 
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+
+    #navbar {
+        margin-top: (@header-pad - 4);
+        background-color: @navbar-color;
+
+        a {
+            line-height: 1em;
+            text-decoration: none;
+            color: white;
+            padding: 16px 32px;
+            -webkit-transition: background-color linear 0.2s;
+
+            @border-style: 1px solid lighten(@navbar-color, 8%);
+            // border-top: @border-style;
+            border-left: @border-style;
+            &:last-child { border-right: @border-style; }
+
+            &:hover { background-color: darken(@brand-color, 12%); } 
+            &:focus { background-color: transparent; }
+            &:visited { color: white; }
+        }
+    }
+}
+
+.container { max-width: 970px; }
+.qrcode { 
+    background-image: url('/images/qrcode.svg');
+    background-size: contain;
+    min-width: 300px; 
+
+}
+
+@media (max-width: 768px) {
+
+
+    header {
+
+        .container {
+
+            padding: 12px 24px;
+            margin: auto;
+
+            .logo {
+
+                width: 100%;
+
+                img {
+                    max-height: 72%;
+                }
+            }
+
+            .contacts { float: left; }
+        }
+    }
+    
+    .qrcode {
+        margin-top: 30px;
+        width: 100%;
+    }
+}
