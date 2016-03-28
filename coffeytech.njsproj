@@ -59,8 +59,10 @@
     <Content Include="images\logo-part-2.png" />
     <Content Include="images\logo-part-3.png" />
     <Content Include="images\qrcode.svg" />
+    <Content Include="js\coffeytech.js.map" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <TypeScriptCompile Include="js\coffeytech.ts" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="fonts\" />
@@ -68,6 +70,11 @@
     <Folder Include="js\" />
     <Folder Include="css\" />
     <Folder Include="images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="js\bootstrap.js" />
+    <Compile Include="js\coffeytech.js" />
+    <Compile Include="js\jquery.min.js" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
