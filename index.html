@@ -11,8 +11,8 @@
 
     <link href="images/favicon.ico" rel="shortcut icon" />  
     <link href='https://fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css'>
-    <link href="./css/bootstrap.css" rel="stylesheet">
-    <link href="./css/layout.css" rel="stylesheet" />
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="./css/layout.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -39,7 +39,7 @@
 
             <div class="container">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#home">Home</a></li>
+                    <li class="active"><a href="#services">Services</a></li>
                     <li><a href="#support">Support</a></li>
                     <li><a href="#resources">Resources</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -48,24 +48,35 @@
         </div>
     </header>
 
-    <div class="container">
-        <content id="home">
-            <h2>Welcome to Coffeytech LLC</h2>
+	<div class="container">
+		<content>
 
-            <span>This site is under construction. Please check back within a few days.</span>
+			<h2 id="services">About Us</h2>
+			<h4>Coffeytech provides IT solutions and computer support services, including:</h4>
 
-            <hr />
+			<ul>
+				<li>On-site hardware/software diagnostics and repair</li>
+				<li>Networking, VPN, redundancy, on-premise / cloud infrastructure</li>
+				<li>Custom servers, workstations, and gaming rigs</li>
+				<li>Technology consulting</li>
+			</ul>
 
-            <embed height="400" src="./images/qrcode.svg" />
-        </content>
-
-        <content id="support"></content>
-
-        <content id="resources"></content>
-    </div>
+            <h2 id="support">Support</h2>
+            <h4>[under construction]</h4>
+            
+            <h2 id="resources">Resources</h2>
+            <h4>[under construction]</h4>
+            
+            <h2 id="contact">Contact</h2>
+            <h4>[under construction]</h4>
+            
+			<!--<embed height="400" src="/images/qrcode.svg" />-->
+		</content>
+	</div>
 
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/coffeytech.js"></script>
+    
 </body>
 </html>
