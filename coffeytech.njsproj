@@ -54,6 +54,8 @@
     <Content Include="html\about.html" />
     <Content Include="html\coffeytech.html" />
     <Content Include="html\contact.html" />
+    <Content Include="images\logo-small.png" />
+    <Content Include="images\logo-template.pdn" />
     <Content Include="images\logo.png" />
     <Content Include="index.html" />
     <Content Include="html\support.html" />
