@@ -15,8 +15,8 @@
 
         static init(): void {
 
-            var powerButton: HTMLElement = <HTMLElement>document.querySelector(".logo > img:nth-child(2)");
-            powerButton.onclick = Page.togglePowerButton;
+            // var powerButton: HTMLElement = <HTMLElement>document.querySelector(".logo > img:nth-child(2)");
+            // powerButton.onclick = Page.togglePowerButton;
             
         }
     }

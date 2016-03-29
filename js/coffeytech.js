@@ -11,8 +11,8 @@ var CoffeyTech;
             document.body.classList[fn]('power-off');
         };
         Page.init = function () {
-            var powerButton = document.querySelector(".logo > img:nth-child(2)");
-            powerButton.onclick = Page.togglePowerButton;
+            // var powerButton: HTMLElement = <HTMLElement>document.querySelector(".logo > img:nth-child(2)");
+            // powerButton.onclick = Page.togglePowerButton;
         };
         return Page;
     }());
