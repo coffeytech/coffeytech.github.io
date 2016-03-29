@@ -36,6 +36,11 @@
     <TypeScriptCompile Include="app.ts" />
     <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
+    <None Include="compilerconfig.json" />
+    <Content Include="compilerconfig.json.defaults">
+      <SubType>Content</SubType>
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </Content>
     <Content Include="css\bootstrap.css" />
     <Content Include="css\layout.css" />
     <Content Include="css\layout.less" />
@@ -49,6 +54,7 @@
     <Content Include="html\about.html" />
     <Content Include="html\coffeytech.html" />
     <Content Include="html\contact.html" />
+    <Content Include="images\logo.png" />
     <Content Include="index.html" />
     <Content Include="html\support.html" />
     <Content Include="images\company-logo.png" />

@@ -42,7 +42,7 @@ body.power-off header #navbar a:visited:hover {
   transition: background-color 0.2s ease-in;
   opacity: 0.8;
   color: #ca8585;
-  background-color: #02010d;
+  background-color: #000000;
 }
 header {
   display: block;
@@ -90,7 +90,7 @@ header .contacts span.telephone b {
   margin: 0 3px;
 }
 header .contacts span.facebook {
-  font-size: 14px;
+  font-size: 16px;
   clear: both;
   -webkit-transition: all linear 0.2s;
 }
@@ -113,7 +113,7 @@ header #navbar a:last-child {
   border-right: 1px solid #4b4b4b;
 }
 header #navbar a:hover {
-  background-color: #0d0b6a;
+  background-color: #14273d;
 }
 header #navbar a:focus {
   background-color: transparent;
@@ -128,6 +128,16 @@ header #navbar a:visited {
   background-image: url('/images/qrcode.svg');
   background-size: contain;
   min-width: 300px;
+}
+h2 {
+  margin-bottom: 24px;
+}
+h2:not(:first-child) {
+  margin-top: 36px;
+}
+h3,
+h4 {
+  margin-bottom: 18px;
 }
 @media (max-width: 768px) {
   header .container {

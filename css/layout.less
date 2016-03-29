@@ -92,7 +92,7 @@ header {
             }
             
             &.facebook {
-                font-size: 14px;
+                font-size: 16px;
                 clear: both;
                 -webkit-transition: all linear 0.2s;
 
@@ -132,7 +132,18 @@ header {
     background-image: url('/images/qrcode.svg');
     background-size: contain;
     min-width: 300px; 
+}
 
+h2 {
+    margin-bottom: 24px;
+
+    &:not(:first-child) {
+        margin-top: 36px;
+    }
+}
+
+h3, h4 {
+    margin-bottom: 18px;
 }
 
 @media (max-width: 768px) {
